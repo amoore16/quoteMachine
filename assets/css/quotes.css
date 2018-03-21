@@ -14,7 +14,7 @@ h3 {
 
 #container {
     padding: 20px;
-    background-color: #037171;
+    background-color: rgba(75, 75, 75, .5);
     max-width: 720px;
     min-width: 200px;
     margin: 20px auto;
