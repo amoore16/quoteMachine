@@ -1,3 +1,6 @@
+var encodedTweet = "";
+var author = "";
+
 $('#generate').on('click', function(){
     $.ajax({
         type:"GET",
@@ -10,6 +13,8 @@ $('#generate').on('click', function(){
             $("#quote").fadeOut(500, function(){
                 $("#quote").text(data.quote).hide().fadeIn(600);
                 $("body").css("background-color", randomColor);
+                encodedTweet = encodeURIComponent(data.quote);
+              author = data.author;
             });
             $("#author").fadeOut(500, function(){
                 $("#author").text(" - " + data.author).hide().fadeIn(700);
@@ -21,6 +26,12 @@ $('#generate').on('click', function(){
     });
 
 });
+$("#tweet").on('click', function(){
+  $("#tweet").attr('href', 'https://twitter.com/intent/tweet?text=' + encodedTweet + ' -' + author );
+});
+
+
+
 
 
 

@@ -25,11 +25,30 @@ h3 {
 #generate {
     border: none;
     padding: 10px;
-    background: rgba(100, 100, 100, .6);
+    background: rgba(75, 75, 75, .6);
     outline: none;
     color: inherit;
     font-family: inherit;
 }
 #generate:hover{
-    background: rgba(200, 200, 200, .8);
+    background: rgba(75, 75, 75, .8);
 }
+
+#tweet {
+    border: none;
+    padding: 11px;
+    background: rgba(75, 75, 75, .6);
+    outline: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+#tweet:hover{
+  text-decoration: none;
+  background: rgba(75, 75, 75, .8);
+}
+
+#tweet:focus{
+  text-decoration: none;
+}
+
