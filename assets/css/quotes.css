@@ -25,11 +25,11 @@ h3 {
 #generate {
     border: none;
     padding: 10px;
-    background: #508991;
+    background: rgba(100, 100, 100, .6);
     outline: none;
     color: inherit;
     font-family: inherit;
 }
 #generate:hover{
-    background: #37828b;
+    background: rgba(200, 200, 200, .8);
 }
