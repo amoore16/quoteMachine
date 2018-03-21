@@ -6,12 +6,10 @@ $('#generate').on('click', function(){
         beforeSend: function(xhr){
             xhr.setRequestHeader("X-Mashape-key", "4POGpDKM7Nmshf1ADps8nLbZrlQ8p17EHTOjsnLYg6dbNIJoYA");
         },
-        complete: function(){
-            $("body").css("background-color", randomColor);
-        },
         success: function(data){
             $("#quote").fadeOut(500, function(){
                 $("#quote").text(data.quote).hide().fadeIn(600);
+                $("body").css("background-color", randomColor);
             });
             $("#author").fadeOut(500, function(){
                 $("#author").text(" - " + data.author).hide().fadeIn(700);
