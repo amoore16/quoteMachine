@@ -1,6 +1,7 @@
 var encodedTweet = "";
 var author = "";
 
+//gets a random movie quote and displays it in main content
 $('#generate').on('click', function(){
     $.ajax({
         type:"GET",
@@ -26,15 +27,12 @@ $('#generate').on('click', function(){
     });
 
 });
+//link to tweet out quote on click
 $("#tweet").on('click', function(){
   $("#tweet").attr('href', 'https://twitter.com/intent/tweet?text=' + encodedTweet + ' -' + author );
 });
 
-
-
-
-
-
+//random color function
 function randomColor() {
     var r = Math.floor(Math.random() * 256);
     var g = Math.floor(Math.random() * 256);
